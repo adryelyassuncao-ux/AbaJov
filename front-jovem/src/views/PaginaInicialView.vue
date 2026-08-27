@@ -1,11 +1,21 @@
 <template>
   <main class="w-full min-h-screen">
     <!-- SEÇÃO Superior-->
-   <section class="bg-blue-950 py-10 px-8 flex items-center justify-start">
-      <div class="flex flex-col items-center gap-6 text-center">
-        <h1 class="text-5xl md:text-[80px] font-normal font-baskerville text-[#102F76] scale-y-135 origin-left inline-block">
-          Jovem
-        </h1>
+   <section class="bg-blue-950 px-4 md:px-8 py-2 md:py-4 flex items-center justify-between h-20 md:h-32 overflow-hidden">
+      <div class="flex items-center">
+       <img 
+       src="../assets/fundojovem.png" 
+      alt="Ilustração do Jovem" 
+      class="w-12 md:w-20 h-auto object-contain rotate-90 translate-x-12 md:translate-x-24"
+      />
+      </div>
+
+      <div class="flex items-center">
+       <img 
+       src="../assets/logo.png" 
+      alt="logo" 
+      class="w-12 md:w-30 h-auto object-contain"
+      />
       </div>
    </section>
    <!-- SEÇÃO meio-->
