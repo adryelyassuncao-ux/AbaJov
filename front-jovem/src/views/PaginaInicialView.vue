@@ -18,17 +18,27 @@
       />
       </div>
    </section>
-   <!-- SEÇÃO meio-->
-    <section class="bg-blue-50 w-full py-12 px-6 flex flex-col md:flex-row items-center justify-around gap-8 h-112">
-      <div class="flex flex-col items-center gap-6 text-center">
-        <h1 class="text-3xl md:text-5xl font-extrabold text-blue-950">
-          Seja Bem Vindo!
-        </h1>
-        <button class="bg-blue-200 text-blue-950 font-bold text-xl md:text-2xl px-8 py-3 rounded-md hover:bg-blue-300 transition">
-          cadastrar
-        </button>
-      </div>
-    </section>
+   
+   <!-- SEÇÃO meio -->
+<section class="relative bg-blue-50 w-full py-12 px-6 flex flex-col md:flex-row items-center justify-center gap-8 h-112 overflow-hidden">
+  
+  <img 
+    src="../assets/figura.png" 
+    alt="Decoração" 
+    class="absolute bottom-0 left-0 w-32 md:w-120 h-auto object-contain pointer-events-none"
+  />
+
+  <!-- Bloco de Texto e Botão -->
+  <div class="flex flex-col items-center gap-6 text-center z-10">
+    <h1 class="text-3xl md:text-5xl font-extrabold text-blue-950">
+      Seja Bem Vindo!
+    </h1>
+    <button class="bg-blue-200 text-blue-950 font-bold text-xl md:text-2xl px-8 py-3 rounded-md hover:bg-blue-300 transition-colors">
+      cadastrar
+    </button>
+  </div>
+
+</section>
 
     <!-- SEÇÃO INFERIOR -->
     <section class="bg-blue-950 text-white w-full py-3 px-8 flex items-center justify-start">
