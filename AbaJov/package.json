@@ -1,9 +1,13 @@
 {
+  
   "name": "abajov",
   "version": "1.0.0",
   "description": "TCC.",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon server.js",
+    "migrate": "node migrate/migrate.js",
+    "setup": "npm install && npm run migrate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,5 +29,8 @@
     "express": "^5.3.0",
     "express-rate-limit": "^8.7.1",
     "mysql2": "^3.23.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
