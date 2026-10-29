@@ -1,0 +1,19 @@
+POST http://localhost:3000/api/chat
+Content-Type: application/json
+
+{
+  "messages": [
+    { 
+      "role": "user", 
+      "content": "Olá Gemini, tudo bem? Responda em uma frase." 
+    },
+    { 
+      "role": "assistant", 
+      "content": "Olá! Tudo bem? Eu sou o assistente virtual da AbaJov..." 
+    },
+    { 
+      "role": "user", 
+      "content": "Como você pode me ajudar a montar meu primeiro currículo?" 
+    }
+  ]
+}
