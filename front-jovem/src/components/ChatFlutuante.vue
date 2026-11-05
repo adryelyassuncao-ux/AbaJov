@@ -23,8 +23,8 @@ function enviar() {
       v-if="chatAberto"
       class="mb-3 w-80 h-96 bg-white border rounded-lg shadow-lg flex flex-col"
     >
-      <div class="flex items-center justify-between bg-blue-600 text-white px-4 py-3 rounded-t-lg">
-        <span class="font-semibold">Assistente</span>
+      <div class="flex items-center justify-between bg-blue-950 text-white px-4 py-3 rounded-t-lg">
+        <span class="font-semibold">Aba-Chat</span>
         <button @click="chatAberto = false">✕</button>
       </div>
 
@@ -37,7 +37,7 @@ function enviar() {
         >
           <p
             class="px-3 py-2 rounded-lg text-sm max-w-[80%]"
-            :class="msg.autor === 'jovem' ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-800'"
+            :class="msg.autor === 'jovem' ? 'bg-blue-950 text-white' : 'bg-gray-200 text-gray-800'"
           >
             {{ msg.texto }}
           </p>
@@ -52,18 +52,19 @@ function enviar() {
           placeholder="Digite sua mensagem..."
           class="flex-1 border rounded-lg px-3 py-2 text-sm"
         />
+        <!-- Botão de enviar -->
         <button
           @click="enviar"
-          class="bg-blue-600 text-white px-3 rounded-lg text-sm"
+          class="bg-blue-950 text-white px-3 rounded-lg text-sm"
         >
           Enviar
         </button>
       </div>
     </div>
-
+<!-- Botão de abrir o chat -->
     <button
       @click="chatAberto = !chatAberto"
-      class="w-14 h-14 rounded-full bg-blue-600 text-white shadow-lg"
+      class="w-14 h-14 rounded-full bg-blue-950 text-white shadow-lg"
     >
       Chat
     </button>
