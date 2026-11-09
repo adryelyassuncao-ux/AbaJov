@@ -1,4 +1,5 @@
 require('dotenv').config();
+
 const express = require('express');
 const cors = require('cors');
 const db = require('./db');
@@ -25,7 +26,8 @@ app.get('/status', async (req, res) => {
 
 // Rota do chatbot
 app.use('/api/chat', require('./routes/chat'));
-
+// Rota do Cadastro
+app.use('/api/auth', require('./routes/cadastro'));
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Servidor rodando em http://localhost:${PORT}`);
